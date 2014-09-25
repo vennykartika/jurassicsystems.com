@@ -346,7 +346,7 @@
                '\tman locates and prints the titled entries from the on-line reference manuals.\n',
       command: function(env, inputLine) {
          var arg = inputLine.trim().split(/ +/)[1] || '',
-             output = 'What manual page do you want?';
+             output = 'What manual pages do you want?';
 
          if (env.commands.hasOwnProperty(arg)) {
             output = env.commands[arg].manPage;
